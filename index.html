@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tamagotchi Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Tamagotchi Game</h1>
 
+    <form id="petForm">
+      <input type="text" id="petName" placeholder="Pet name" required />
+      <select id="animalType" required>
+        <option value="cat">Cat</option>
+        <option value="dog">Dog</option>
+        <option value="rabbit">Rabbit</option>
+        <option value="bird">Bird</option>
+      </select>
+      <button type="submit">Adopt Pet</button>
+    </form>
+
+    <div id="petsContainer"></div>
+
+    <h2>Activity History</h2>
+    <div id="activityLog"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
